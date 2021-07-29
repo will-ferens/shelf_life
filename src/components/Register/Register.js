@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const RegisterContainer = styled.main``
-const RegisterFormContainer = styled.section``
-const RegisterTitle = styled.h2``
+const RegisterContainer = styled.main``;
+const RegisterFormContainer = styled.section``;
+const RegisterTitle = styled.h2``;
 
 const Register = () => {
   return (
@@ -12,7 +12,7 @@ const Register = () => {
         <RegisterTitle>Register</RegisterTitle>
       </RegisterFormContainer>
     </RegisterContainer>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;

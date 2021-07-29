@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
   display: grid;
@@ -19,7 +19,6 @@ const StyledHeader = styled.header`
 `;
 const HeaderTitle = styled.h1``;
 
-
 const Header = () => {
   return (
     <StyledHeader>
@@ -33,7 +32,7 @@ const Header = () => {
         <Link to="/register">Register</Link>
       </div>
     </StyledHeader>
-  )
-}
+  );
+};
 
 export default Header;
