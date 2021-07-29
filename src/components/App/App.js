@@ -3,20 +3,27 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import Header from '../Header/Header'
 import Home from '../Home/Home'
+import Register from '../Register/Register'
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Home />
-      </div>
-    </Router>
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route path="/register">
+              <Register  />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
   );
 }
 

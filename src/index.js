@@ -4,12 +4,20 @@ import './index.css';
 import App from './components/App/App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
+import firebase from 'firebase/app'
+import { ReactReduxFirebaseProvider, } from 'react-redux-firebase';
 import * as serviceWorker from './serviceWorker';
-
+const reactReduxFireBaseProps = {
+  firebase,
+  config: {},
+  dispatch: store.dispatch,
+}
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ReactReduxFirebaseProvider {...reactReduxFireBaseProps}>
+        <App />
+      </ReactReduxFirebaseProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
