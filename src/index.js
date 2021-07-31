@@ -6,12 +6,15 @@ import { store } from "./app/store";
 import { Provider } from "react-redux";
 import firebase from "firebase/app";
 import { ReactReduxFirebaseProvider } from "react-redux-firebase";
+import { createFirestoreInstance } from "redux-firestore";
+
 import * as serviceWorker from "./serviceWorker";
 const reactReduxFireBaseProps = {
   firebase,
   config: {
     userProfile: "users",
     useFirestoreForProfile: true,
+    createFirestoreInstance
   },
   dispatch: store.dispatch,
 };
