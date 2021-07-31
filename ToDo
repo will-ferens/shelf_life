@@ -4,7 +4,13 @@ qiui0F6q3Jrjj
 [ ] Auth
   [x] Connect to firebase 
   [x] Registration and Login 
+  [x] Logout
+    [x] conditional render with login
   [ ] Error handling and messaging
+    [x] Fix firebase permissions
+    [ ] Return success message on register
+    [ ] Notify error when error
+  [ ] Google sign in
   [ ] Private Route
   [ ] Styles
 

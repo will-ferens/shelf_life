@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useFirebase } from "react-redux-firebase";
+
+import Logout from "../Auth/Logout/Logout";
 
 const StyledHeader = styled.header`
   display: grid;
@@ -20,6 +23,8 @@ const StyledHeader = styled.header`
 const HeaderTitle = styled.h1``;
 
 const Header = () => {
+  const firebase = useFirebase();
+  const userLoggedIn = firebase.auth.isEmpty;
   return (
     <StyledHeader>
       <div className="title">
@@ -28,7 +33,7 @@ const Header = () => {
         </HeaderTitle>
       </div>
       <div className="links">
-        <Link to="/login">Login</Link>
+        {userLoggedIn ? <Logout /> : <Link to="/login">Login</Link>}
         <Link to="/register">Register</Link>
       </div>
     </StyledHeader>

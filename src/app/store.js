@@ -1,18 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import firebase from "firebase/app";
+
 import "firebase/auth";
-import 'firebase/database';
-import 'firebase/firestore'
+import "firebase/database";
+import "firebase/firestore";
 import {
   getFirebase,
   actionTypes as rrfActionTypes,
 } from "react-redux-firebase";
 import { constants as rfConstants } from "redux-firestore";
 import { rootReducer } from "./rootReducer";
-
-import { firebaseConfig } from "../constants/firebaseConfig";
-
-firebase.initializeApp(firebaseConfig);
 
 export const store = configureStore({
   reducer: rootReducer,

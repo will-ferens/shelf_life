@@ -7,14 +7,16 @@ import { Provider } from "react-redux";
 import firebase from "firebase/app";
 import { ReactReduxFirebaseProvider } from "react-redux-firebase";
 import { createFirestoreInstance } from "redux-firestore";
-
+import { firebaseConfig } from "./constants/firebaseConfig";
 import * as serviceWorker from "./serviceWorker";
+
+firebase.initializeApp(firebaseConfig);
 const reactReduxFireBaseProps = {
   firebase,
   config: {
     userProfile: "users",
     useFirestoreForProfile: true,
-    createFirestoreInstance
+    createFirestoreInstance,
   },
   dispatch: store.dispatch,
 };
