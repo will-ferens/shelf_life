@@ -1,0 +1,1 @@
+export const emailValid = (email) => {};
