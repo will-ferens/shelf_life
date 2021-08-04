@@ -1,19 +1,25 @@
 import React from "react";
 import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
+import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux"
 // import { Link } from "react-router-dom";
 
 import * as FormValidationFunctions from "../validation";
 import * as FormComponents from "../formComponents";
 
+
+
 const Register = () => {
   const firebase = useFirebase();
+  const history = useHistory();
+  const error = useSelector((state) => state.firebase.authError);
 
   const createNewUser = ({ email, password, username }) => {
     firebase
       .createUser({ email, password }, { username, email })
-      .then((data) => {
-        console.log(data);
+      .then(() => {
+        history.push('/');
       })
       .catch((err) => {
         console.log(err);
@@ -138,6 +144,12 @@ const Register = () => {
           )}
         />
       </FormComponents.FormContainer>
+      {
+        error ?
+          <FormComponents.FormErrorMessage message={error.message} />
+          :
+          null
+      }
     </FormComponents.Container>
   );
 };

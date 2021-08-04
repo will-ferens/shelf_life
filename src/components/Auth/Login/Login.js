@@ -2,21 +2,23 @@ import React from "react";
 import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux"
 
 import * as FormComponents from "../formComponents"
 
 const Login = () => {
   const firebase = useFirebase();
   const history = useHistory();
+  const error = useSelector((state) => state.firebase.authError);
 
   const submit = async values => {
-     firebase.login({
-       email: values.email,
-        password: values.password,
-     })
-     .then(() => {
-       history.push('/')
-     })
+    firebase.login({
+      email: values.email,
+      password: values.password,
+    })
+    .then(() => {
+      history.push('/')
+    })
   }
   return (
     <FormComponents.Container>
@@ -74,6 +76,12 @@ const Login = () => {
             )}
         />
       </FormComponents.FormContainer>
+      {
+        error ?
+          <FormComponents.FormErrorMessage message={error.message} />
+          :
+          null
+      }
     </FormComponents.Container>
   )
 }

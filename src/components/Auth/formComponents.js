@@ -42,3 +42,11 @@ export const ButtonContainer = styled.div`
   margin-top: 24px;
 `
 export const FormButton = styled.button``
+
+export const FormErrorMessageText = styled.p`
+  justify-self: center;
+`
+
+export const FormErrorMessage = (props) => {
+  return <FormErrorMessageText>{props.message}</FormErrorMessageText>;
+}
