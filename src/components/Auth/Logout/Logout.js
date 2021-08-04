@@ -13,7 +13,7 @@ const Logout = () => {
       .auth()
       .signOut()
       .then(() => {
-        history.push("/");
+        history.push("/login");
       })
       .catch((error) => {
         console.log(error);

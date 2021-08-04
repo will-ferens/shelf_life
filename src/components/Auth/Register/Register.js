@@ -3,12 +3,9 @@ import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux"
-// import { Link } from "react-router-dom";
 
 import * as FormValidationFunctions from "../validation";
 import * as FormComponents from "../formComponents";
-
-
 
 const Register = () => {
   const firebase = useFirebase();
@@ -19,7 +16,7 @@ const Register = () => {
     firebase
       .createUser({ email, password }, { username, email })
       .then(() => {
-        history.push('/');
+        history.push('/login');
       })
       .catch((err) => {
         console.log(err);

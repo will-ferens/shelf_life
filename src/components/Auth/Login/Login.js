@@ -3,6 +3,7 @@ import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux"
+// import { Redirect } from 'react-router-dom';
 
 import * as FormComponents from "../formComponents"
 
@@ -17,7 +18,7 @@ const Login = () => {
       password: values.password,
     })
     .then(() => {
-      history.push('/')
+      history.push('/dashboard')
     })
   }
   return (
@@ -41,7 +42,7 @@ const Login = () => {
               <Field name="email">
                 {({ input, meta }) => (
                   <FormComponents.FormGroup>
-                    <FormComponents.Label>Username</FormComponents.Label>
+                    <FormComponents.Label>Email</FormComponents.Label>
                     <FormComponents.Input {...input} type="text" placeholder="Email" />
                     {meta.error && meta.touched && <FormComponents.ErrorMessage>{meta.error}</FormComponents.ErrorMessage>}
                   </FormComponents.FormGroup>

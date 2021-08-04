@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useFirebase } from "react-redux-firebase";
-
+import { useSelector } from 'react-redux'
 import Logout from "../Auth/Logout/Logout";
 
 const StyledHeader = styled.header`
@@ -23,8 +22,7 @@ const StyledHeader = styled.header`
 const HeaderTitle = styled.h1``;
 
 const Header = () => {
-  const firebase = useFirebase();
-  const userLoggedIn = firebase.auth.isEmpty;
+  const userLoggedIn = useSelector((state) => state.firebase.auth.uid);
   return (
     <StyledHeader>
       <div className="title">
