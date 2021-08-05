@@ -1,14 +1,23 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import React from 'react'
+import {
+  Route,
+  Redirect
+} from 'react-router-dom';
 import { useSelector } from 'react-redux'
+import { isLoaded, isEmpty } from 'react-redux-firebase'
 
-const PrivateRoute = ({ children, ...rest }) => {
-  const user = useSelector((state) => state.firebase.auth.uid != null);
+
+// A wrapper for <Route> that redirects to the login
+// screen if you're not yet authenticated or if auth is not
+// yet loaded
+function PrivateRoute({ children, ...rest }) {
+  const auth = useSelector(state => state.firebase.auth)
+  
   return (
     <Route
       {...rest}
       render={({ location }) =>
-        user ? (
+        isLoaded(auth) && !isEmpty(auth) ? (
           children
         ) : (
           <Redirect
@@ -20,6 +29,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         )
       }
     />
-  )
+  );
 }
+
 export default PrivateRoute

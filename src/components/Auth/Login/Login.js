@@ -3,7 +3,6 @@ import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux"
-// import { Redirect } from 'react-router-dom';
 
 import * as FormComponents from "../formComponents"
 
@@ -17,8 +16,11 @@ const Login = () => {
       email: values.email,
       password: values.password,
     })
-    .then(() => {
-      history.push('/dashboard')
+      .then((data) => {
+        console.log(data)
+        firebase.reloadAuth().then(() => {
+          history.push('/dashboard')
+        })
     })
   }
   return (

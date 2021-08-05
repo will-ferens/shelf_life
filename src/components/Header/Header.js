@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux'
+import { isLoaded, isEmpty } from 'react-redux-firebase'
 import Logout from "../Auth/Logout/Logout";
 
 const StyledHeader = styled.header`
@@ -22,7 +23,7 @@ const StyledHeader = styled.header`
 const HeaderTitle = styled.h1``;
 
 const Header = () => {
-  const userLoggedIn = useSelector((state) => state.firebase.auth.uid);
+  const auth = useSelector(state => state.firebase.auth);
   return (
     <StyledHeader>
       <div className="title">
@@ -31,7 +32,7 @@ const Header = () => {
         </HeaderTitle>
       </div>
       <div className="links">
-        {userLoggedIn ? <Logout /> : <Link to="/login">Login</Link>}
+        {isLoaded(auth) && !isEmpty(auth) ? <Logout /> : <Link to="/login">Login</Link>}
         <Link to="/register">Register</Link>
       </div>
     </StyledHeader>
