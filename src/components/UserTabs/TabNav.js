@@ -24,9 +24,13 @@ const tabs = [
 ]
 const TabNavContainer = styled.div`
   display: flex;
+  padding: 0 20px;
 `
 const TabContainer = styled.div``
-const Tab = styled.button``
+const Tab = styled.button`
+  background: #fff;
+  margin: 0 4px 0 0;
+`
 
 const TabNav = (props) => {
   const dispatch = useDispatch();

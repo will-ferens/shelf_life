@@ -3,6 +3,8 @@ import styled from "styled-components"
 import TabNav from "../UserTabs/TabNav"
 
 const DashboardContainer = styled.main`
+  display: flex;
+  flex-direction: column;
   
 `
 
