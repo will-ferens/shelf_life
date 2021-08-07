@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   a {
-    color: ${GlobalStyles.paperWhite};
+    color: #fff;
     text-decoration: none;
   }
   background-color: ${GlobalStyles.midNightBluePrimary};

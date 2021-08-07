@@ -10,13 +10,25 @@ const DashboardContainer = styled.main`
   margin-top: 32px;
   padding: ${GlobalStyles.gutterPadding};
 `;
+const UserComponentContainer = styled.section`
+  min-height: 600px;
+  border: 2px solid ${GlobalStyles.velveticaSecondary};
+  border-radius: 4px;
+  &.top-border-radius-none {
+    border-radius: 0 4px 4px 4px;
+  }
+`;
 
 const Dashboard = () => {
   const activeTab = useSelector((state) => state.tabReducer.activeTab);
   return (
     <DashboardContainer>
       <TabNav />
-      {activeTab.title}
+      <UserComponentContainer
+        className={
+          activeTab.id === "user_search_tab" ? "top-border-radius-none" : ""
+        }
+      ></UserComponentContainer>
     </DashboardContainer>
   );
 };

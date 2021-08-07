@@ -35,10 +35,11 @@ const Tab = styled.button`
   font-size: 22px;
   width: 85px;
   padding-top: 6px;
+  margin-bottom: -2px;
   &.active {
     border: 2px solid ${GlobalStyles.velveticaSecondary};
-    border-radius: 4px 4px 0 0;
     border-bottom: none;
+    border-radius: 4px 4px 0 0;
   }
 `;
 
