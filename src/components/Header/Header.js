@@ -3,25 +3,27 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { isLoaded, isEmpty } from "react-redux-firebase";
+import * as GlobalStyles from "../../constants/styles";
 import Logout from "../Auth/Logout/Logout";
 
 const StyledHeader = styled.header`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  a {
+    color: ${GlobalStyles.paperWhite};
+    text-decoration: none;
+  }
+  background-color: ${GlobalStyles.midNightBluePrimary};
   .title {
-    padding: 0 20px;
-    font-family: "Hahmlet", serif;
-    a {
-      text-decoration: none;
-    }
+    padding: ${GlobalStyles.gutterPadding};
+    font-family: ${GlobalStyles.headingFont};
   }
   .links {
     justify-self: flex-end;
-    padding: 0 20px;
+    padding: ${GlobalStyles.gutterPadding};
     a {
       padding: 0 12px;
-      text-decoration: none;
     }
   }
 `;
