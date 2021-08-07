@@ -6,12 +6,12 @@ qiui0F6q3Jrjj
   [x] Registration and Login 
   [x] Logout
     [x] conditional render with login
-  [x] Error handling and messaging
+  [ ] Error handling and messaging
     [x] Fix firebase permissions
     [ ] Return success message on register
-    [x] Notify error when error
+    [ ] Notify error when error
   [ ] Google sign in
-  [x] Private Route
+  [ ] Private Route
   [ ] Styles
 
 [ ] User
@@ -30,11 +30,9 @@ qiui0F6q3Jrjj
 [ ] React Native companion?
 
 TODAY
-[ ] User tabs
-  [ ] Search books
-  [ ] Add books to list
-[ ] Interview prep q's
-[ ] Just JavaScript
-[ ] JS the hard parts
-[ ] Apply to some jobs
-
+[ ] Styles
+  [ ] Landing page
+  [ ] Forms
+  [ ] Tabs
+[ ] Just JavaScript 2 chapters
+[x] Airfare to Columbus

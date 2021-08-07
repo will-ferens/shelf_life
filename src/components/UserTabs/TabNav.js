@@ -43,8 +43,8 @@ const TabNav = (props) => {
       {
         tabs.map((tab) => {
           return (
-            <TabContainer id={tab.id}>
-              <Tab onClick={() => SwitchTab(tab.id)}>
+            <TabContainer key={tab.id}>
+              <Tab className={activeTab === tab.id ? 'active' : ''} onClick={() => SwitchTab(tab.id)}>
                 {tab.title}
               </Tab>
             </TabContainer>

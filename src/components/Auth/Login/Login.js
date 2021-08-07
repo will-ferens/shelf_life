@@ -3,12 +3,14 @@ import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux"
+// import { userLogin } from "../../../actions/login.action"
 
 import * as FormComponents from "../formComponents"
 
 const Login = () => {
   const firebase = useFirebase();
   const history = useHistory();
+  // const dispatch = useDispatch();
   const error = useSelector((state) => state.firebase.authError);
 
   const submit = async values => {
@@ -17,8 +19,8 @@ const Login = () => {
       password: values.password,
     })
       .then((data) => {
-        console.log(data)
         firebase.reloadAuth().then(() => {
+          // dispatch(userLogin(data?.user?.user?.uid))
           history.push('/dashboard')
         })
     })
