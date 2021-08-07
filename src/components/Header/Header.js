@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useSelector } from 'react-redux'
-import { isLoaded, isEmpty } from 'react-redux-firebase'
+import { useSelector } from "react-redux";
+import { isLoaded, isEmpty } from "react-redux-firebase";
 import Logout from "../Auth/Logout/Logout";
 
 const StyledHeader = styled.header`
@@ -11,19 +11,24 @@ const StyledHeader = styled.header`
   align-items: center;
   .title {
     padding: 0 20px;
+    font-family: "Hahmlet", serif;
+    a {
+      text-decoration: none;
+    }
   }
   .links {
     justify-self: flex-end;
     padding: 0 20px;
     a {
       padding: 0 12px;
+      text-decoration: none;
     }
   }
 `;
 const HeaderTitle = styled.h1``;
 
 const Header = () => {
-  const auth = useSelector(state => state.firebase.auth);
+  const auth = useSelector((state) => state.firebase.auth);
   return (
     <StyledHeader>
       <div className="title">
@@ -32,7 +37,11 @@ const Header = () => {
         </HeaderTitle>
       </div>
       <div className="links">
-        {isLoaded(auth) && !isEmpty(auth) ? <Logout /> : <Link to="/login">Login</Link>}
+        {isLoaded(auth) && !isEmpty(auth) ? (
+          <Logout />
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
         <Link to="/register">Register</Link>
       </div>
     </StyledHeader>
