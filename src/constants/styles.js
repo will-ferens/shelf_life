@@ -1,3 +1,4 @@
+//https://www.palettable.io/2C2F4E-0F0712-FFF8F2-84273A
 export const mediaQueries = {
   desktop: `(max-width: 1200px)`,
   laptop: `(max-width: 1024px)`,
@@ -12,3 +13,4 @@ export const midNightBluePrimary = `#2C2F4E`;
 export const velveticaSecondary = `#0F0712`;
 export const paperWhite = `#FFF8F2`;
 export const accentRogue = `#84273A`;
+export const accentSeaBlue = "#228DA1";

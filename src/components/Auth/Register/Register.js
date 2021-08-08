@@ -2,8 +2,9 @@ import React from "react";
 import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 
+import * as GlobalStyles from "../../../constants/styles";
 import * as FormValidationFunctions from "../validation";
 import * as FormComponents from "../formComponents";
 
@@ -16,7 +17,7 @@ const Register = () => {
     firebase
       .createUser({ email, password }, { username, email })
       .then(() => {
-        history.push('/login');
+        history.push("/login");
       })
       .catch((err) => {
         console.log(err);
@@ -130,10 +131,17 @@ const Register = () => {
                 )}
               </Field>
               <FormComponents.ButtonContainer>
-                <FormComponents.FormButton type="submit">
+                <FormComponents.FormButton
+                  primaryColor={GlobalStyles.accentSeaBlue}
+                  type="submit"
+                >
                   Submit
                 </FormComponents.FormButton>
-                <FormComponents.FormButton type="button" onClick={form.reset}>
+                <FormComponents.FormButton
+                  primaryColor={GlobalStyles.accentRogue}
+                  type="button"
+                  onClick={form.reset}
+                >
                   Reset
                 </FormComponents.FormButton>
               </FormComponents.ButtonContainer>
@@ -141,12 +149,9 @@ const Register = () => {
           )}
         />
       </FormComponents.FormContainer>
-      {
-        error ?
-          <FormComponents.FormErrorMessage message={error.message} />
-          :
-          null
-      }
+      {error ? (
+        <FormComponents.FormErrorMessage message={error.message} />
+      ) : null}
     </FormComponents.Container>
   );
 };

@@ -33,10 +33,15 @@ const Tab = styled.button`
   border: 2px solid ${GlobalStyles.paperWhite};
   margin: 0 4px 0 0;
   font-size: 22px;
-  width: 85px;
-  padding-top: 6px;
+  width: 95px;
+  padding: 6px;
   margin-bottom: -2px;
   &.active {
+    z-index: 1;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: ${GlobalStyles.accentRogue};
+    top: 2px;
     border: 2px solid ${GlobalStyles.velveticaSecondary};
     border-bottom: none;
     border-radius: 4px 4px 0 0;

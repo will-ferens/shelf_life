@@ -3,7 +3,7 @@ import { Form, Field } from "react-final-form";
 import { useFirebase } from "react-redux-firebase";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+import * as GlobalStyles from "../../../constants/styles";
 import * as FormComponents from "../formComponents";
 
 const Login = () => {
@@ -76,10 +76,15 @@ const Login = () => {
                 )}
               </Field>
               <FormComponents.ButtonContainer>
-                <FormComponents.FormButton type="submit" disabled={submitting}>
+                <FormComponents.FormButton
+                  primaryColor={GlobalStyles.accentSeaBlue}
+                  type="submit"
+                  disabled={submitting}
+                >
                   Submit
                 </FormComponents.FormButton>
                 <FormComponents.FormButton
+                  primaryColor={GlobalStyles.accentRogue}
                   type="button"
                   onClick={form.reset}
                   disabled={submitting || pristine}
