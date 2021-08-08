@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TabNav from "../UserTabs/TabNav";
+import Search from "../Search/Search";
 import { useSelector } from "react-redux";
 import * as GlobalStyles from "../../constants/styles";
 
@@ -17,18 +18,33 @@ const UserComponentContainer = styled.section`
   &.top-border-radius-none {
     border-radius: 0 4px 4px 4px;
   }
+  &.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
+
+const SelectedBookContainer = styled.div``;
 
 const Dashboard = () => {
   const activeTab = useSelector((state) => state.tabReducer.activeTab);
+
   return (
     <DashboardContainer>
       <TabNav />
       <UserComponentContainer
         className={
-          activeTab.id === "user_search_tab" ? "top-border-radius-none" : ""
+          activeTab.id === "user_search_tab"
+            ? "top-border-radius-none search"
+            : ""
         }
-      ></UserComponentContainer>
+      >
+        {activeTab.id === "user_search_tab" && <Search />}
+        {activeTab.id === "user_search_tab" ||
+        activeTab.id === "user_list_tab" ? (
+          <SelectedBookContainer />
+        ) : null}
+      </UserComponentContainer>
     </DashboardContainer>
   );
 };

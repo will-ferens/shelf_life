@@ -38,14 +38,16 @@ const Header = () => {
           <Link to="/">Shelf Life.</Link>
         </HeaderTitle>
       </div>
-      <div className="links">
-        {isLoaded(auth) && !isEmpty(auth) ? (
+      {isLoaded(auth) && !isEmpty(auth) ? (
+        <div className="links">
           <Logout />
-        ) : (
+        </div>
+      ) : (
+        <div className="links">
           <Link to="/login">Login</Link>
-        )}
-        <Link to="/register">Register</Link>
-      </div>
+          <Link to="/register">Register</Link>
+        </div>
+      )}
     </StyledHeader>
   );
 };
