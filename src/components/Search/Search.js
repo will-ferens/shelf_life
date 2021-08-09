@@ -4,7 +4,9 @@ import styled from "styled-components";
 import SearchBar from "./SearchBar";
 import ResultsList from "./ResultsList";
 
-const SearchContainer = styled.div``;
+const SearchContainer = styled.div`
+  padding: 32px;
+`;
 
 const Search = () => {
   return (

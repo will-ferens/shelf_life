@@ -1,0 +1,322 @@
+[{
+    "kind": "books#volume",
+    "id": "bmmMDQAAQBAJ",
+    "etag": "8I7LWJZSdcU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/bmmMDQAAQBAJ",
+    "volumeInfo": {
+        "title": "Angle of Repose",
+        "authors": [
+            "Wallace Stegner"
+        ],
+        "publisher": "Vintage",
+        "publishedDate": "2014-11-04",
+        "description": "Stegner's Pulitzer Prize-winning novel is the story of four generations in the life of an American family. A wheelchair-bound retired historian embarks on a monumental quest: to come to know his grandparents, now long dead. The unfolding drama of the story of the American West sets the tone for Stegner's masterpiece.",
+        "industryIdentifiers": [{
+                "type": "ISBN_13",
+                "identifier": "9781101872765"
+            },
+            {
+                "type": "ISBN_10",
+                "identifier": "1101872764"
+            }
+        ],
+        "readingModes": {
+            "text": false,
+            "image": false
+        },
+        "pageCount": 632,
+        "printType": "BOOK",
+        "categories": [
+            "Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 100,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=bmmMDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=bmmMDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=bmmMDQAAQBAJ&printsec=frontcover&dq=wallace+stegner&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=bmmMDQAAQBAJ&dq=wallace+stegner&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Angle_of_Repose.html?hl=&id=bmmMDQAAQBAJ"
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bmmMDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+        "textSnippet": "A wheelchair-bound retired historian embarks on a monumental quest: to come to know his grandparents, now long dead. The unfolding drama of the story of the American West sets the tone for Stegner&#39;s masterpiece."
+    }
+},
+{
+    "kind": "books#volume",
+    "id": "Ev_rDRYSlPQC",
+    "etag": "rwMeHx6vXz0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Ev_rDRYSlPQC",
+    "volumeInfo": {
+        "title": "Leavings",
+        "subtitle": "Poems",
+        "authors": [
+            "Wendell Berry"
+        ],
+        "publisher": "Counterpoint Press",
+        "publishedDate": "2010",
+        "description": "\"Berry has become ever more prophetic . . . In the Sabbaths of 2005-08 published here, Berry angrily mourns the degradation of the nation wrought by destruction of the land and the pursuit of wealth and power. He says that we must prepare to live without hope for a while, though in the very first of the Sabbaths, he prays not to lose love along with hope: 'Help me, please, to carry / this candle against the wind.' Despite anger and bitterness, he often recalls and teaches the beauty and propriety of creation, too. If he is a Jeremiah, he is also a David the psalmist.\" --Booklist No one writes like Wendell Berry. Whether essay, novel, story, or poem, his inimitable voice rings true, as natural as the land he has farmed in Kentucky for over 40 years. Following the widely praised Given, this new collection offers a masterful blend of epigrams, elegies, lyrics, and letters, with the occasional short love poem. Alternately amused, outraged, and resigned, Berry's welcome voice is the constant in this varied mix. The book concludes with a new sequence of Sabbath poems, works that have spawned from Berry's Sunday morning walks of meditation and observation. Berry's themes are reflections of his life: friends, family, the farm, the nature around us as well as within. He speaks strongly for himself and sometimes for the lost heart of the country. As he has borne witness to the world for eight decades, what he offers us now in this collection of poems is of incomparable value.",
+        "industryIdentifiers": [{
+                "type": "ISBN_13",
+                "identifier": "9781582435343"
+            },
+            {
+                "type": "ISBN_10",
+                "identifier": "1582435340"
+            }
+        ],
+        "readingModes": {
+            "text": false,
+            "image": false
+        },
+        "pageCount": 132,
+        "printType": "BOOK",
+        "categories": [
+            "Poetry"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.0.0.0.preview.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Ev_rDRYSlPQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Ev_rDRYSlPQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Ev_rDRYSlPQC&printsec=frontcover&dq=wendell+berry&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Ev_rDRYSlPQC&dq=wendell+berry&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Leavings.html?hl=&id=Ev_rDRYSlPQC"
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Ev_rDRYSlPQC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+        "textSnippet": "He speaks strongly for himself and sometimes for the lost heart of the country. As he has borne witness to the world for eight decades, what he offers us now in this collection of poems is of incomparable value."
+    }
+},
+{
+    "kind": "books#volume",
+    "id": "pDeODQAAQBAJ",
+    "etag": "58K80MqeCvc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/pDeODQAAQBAJ",
+    "volumeInfo": {
+        "title": "The Anthropology of Turquoise",
+        "subtitle": "Reflections on Desert, Sea, Stone, and Sky",
+        "authors": [
+            "Ellen Meloy"
+        ],
+        "publisher": "Vintage",
+        "publishedDate": "2003",
+        "description": "Integrating elements of memoir, adventure, and natural history, the author of Raven's Exile explores the mysteries of the natural world, using turquoise, both the color and the gem, as a metaphor, journeying to a rich variety of canyons, deserts, seas, and mountains and the plants and animals that make such habitats their home. Reprint.",
+        "industryIdentifiers": [{
+                "type": "ISBN_13",
+                "identifier": "9780375708138"
+            },
+            {
+                "type": "ISBN_10",
+                "identifier": "0375708138"
+            }
+        ],
+        "readingModes": {
+            "text": false,
+            "image": false
+        },
+        "pageCount": 323,
+        "printType": "BOOK",
+        "categories": [
+            "Nature"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 5,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=pDeODQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=pDeODQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=pDeODQAAQBAJ&printsec=frontcover&dq=ellene+meloy&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=pDeODQAAQBAJ&dq=ellene+meloy&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Anthropology_of_Turquoise.html?hl=&id=pDeODQAAQBAJ"
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=pDeODQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+        "textSnippet": "Integrating elements of memoir, adventure, and natural history, the author of Raven&#39;s Exile explores the mysteries of the natural world, using turquoise, both the color and the gem, as a metaphor, journeying to a rich variety of canyons, ..."
+    }
+},
+{
+    "kind": "books#volume",
+    "id": "mgK5EdIQDL4C",
+    "etag": "eh0mK6qZkkw",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/mgK5EdIQDL4C",
+    "volumeInfo": {
+        "title": "A Field Guide to Getting Lost",
+        "authors": [
+            "Rebecca Solnit"
+        ],
+        "publisher": "Penguin",
+        "publishedDate": "2006-06-27",
+        "description": "A stimulating exploration of wandering, being lost, and the uses of the unknown from the author of Men Explain Things To Me Written as a series of autobiographical essays, A Field Guide to Getting Lost draws on emblematic moments and relationships in Rebecca Solnit's life to explore issues of uncertainty, trust, loss, memory, desire, and place. Solnit is interested in the stories we use to navigate our way through the world, and the places we traverse, from wilderness to cities, in finding ourselves, or losing ourselves. While deeply personal, her own stories link up to larger stories, from captivity narratives of early Americans to the use of the color blue in Renaissance painting, not to mention encounters with tortoises, monks, punk rockers, mountains, deserts, and the movie Vertigo. The result is a distinctive, stimulating voyage of discovery. From the Trade Paperback edition.",
+        "industryIdentifiers": [{
+                "type": "ISBN_10",
+                "identifier": "1101118717"
+            },
+            {
+                "type": "ISBN_13",
+                "identifier": "9781101118719"
+            }
+        ],
+        "readingModes": {
+            "text": true,
+            "image": false
+        },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "categories": [
+            "Biography & Autobiography"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 12,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.11.10.0.preview.2",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=mgK5EdIQDL4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=mgK5EdIQDL4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=mgK5EdIQDL4C&printsec=frontcover&dq=rebecca+solnit&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=mgK5EdIQDL4C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=mgK5EdIQDL4C"
+    },
+    "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+            "amount": 7.99,
+            "currencyCode": "USD"
+        },
+        "retailPrice": {
+            "amount": 7.99,
+            "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=mgK5EdIQDL4C&rdid=book-mgK5EdIQDL4C&rdot=1&source=gbs_api",
+        "offers": [{
+            "finskyOfferType": 1,
+            "listPrice": {
+                "amountInMicros": 7990000,
+                "currencyCode": "USD"
+            },
+            "retailPrice": {
+                "amountInMicros": 7990000,
+                "currencyCode": "USD"
+            },
+            "giftable": true
+        }]
+    },
+    "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/A_Field_Guide_to_Getting_Lost-sample-epub.acsm?id=mgK5EdIQDL4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mgK5EdIQDL4C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+        "textSnippet": "Solnit is interested in the stories we use to navigate our way through the world, and the places we traverse, from wilderness to cities, in finding ourselves, or losing ourselves."
+    }
+}
+
+]
