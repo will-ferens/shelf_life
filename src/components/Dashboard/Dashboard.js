@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import TabNav from "../UserTabs/TabNav";
 import Search from "../Search/Search";
+import SelectedBook from "../SelectedBook/SelectedBook";
+
 import { useSelector } from "react-redux";
 import * as GlobalStyles from "../../constants/styles";
 
@@ -24,8 +26,6 @@ const UserComponentContainer = styled.section`
   }
 `;
 
-const SelectedBookContainer = styled.div``;
-
 const Dashboard = () => {
   const activeTab = useSelector((state) => state.tabReducer.activeTab);
 
@@ -42,7 +42,7 @@ const Dashboard = () => {
         {activeTab.id === "user_search_tab" && <Search />}
         {activeTab.id === "user_search_tab" ||
         activeTab.id === "user_list_tab" ? (
-          <SelectedBookContainer />
+          <SelectedBook />
         ) : null}
       </UserComponentContainer>
     </DashboardContainer>
