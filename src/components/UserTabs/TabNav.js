@@ -51,7 +51,7 @@ const Tab = styled.button`
 const TabNav = () => {
   const dispatch = useDispatch();
   const activeTab = useSelector((state) => state.tabReducer.activeTab);
-  function SwitchTab(tab) {
+  function switchTab(tab) {
     dispatch(setActiveTab(tab));
   }
   return (
@@ -61,7 +61,7 @@ const TabNav = () => {
           <TabContainer key={tab.id}>
             <Tab
               className={activeTab.id === tab.id ? "active" : ""}
-              onClick={() => SwitchTab(tab)}
+              onClick={() => switchTab(tab)}
             >
               {tab.title}
             </Tab>
