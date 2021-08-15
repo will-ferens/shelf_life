@@ -9,6 +9,7 @@ import {
 } from "react-redux-firebase";
 import { constants as rfConstants } from "redux-firestore";
 import { rootReducer } from "./rootReducer";
+import { googleBooksApi } from "./googleBooksApi";
 
 export const store = configureStore({
   reducer: rootReducer,
@@ -31,5 +32,5 @@ export const store = configureStore({
           getFirebase,
         },
       },
-    }),
+    }).concat(googleBooksApi.middleware),
 });

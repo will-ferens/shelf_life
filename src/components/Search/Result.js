@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { selectBook } from "../../actions/select_book.action";
 
 const ResultContainer = styled.article`
-  width: 33%;
+  width: 25%;
   figure {
     margin: 0;
     img {
