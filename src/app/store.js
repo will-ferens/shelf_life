@@ -9,7 +9,7 @@ import {
 } from "react-redux-firebase";
 import { constants as rfConstants } from "redux-firestore";
 import { rootReducer } from "./rootReducer";
-import { googleBooksApi } from "./googleBooksApi";
+import { googleBooksApi } from "../services/googleBooksApi";
 
 export const store = configureStore({
   reducer: rootReducer,

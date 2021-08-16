@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const API_KEY = "AIzaSyDz1Xlb7S9TrVPH7Iv4p7J7zjtxuymluWg";
 
 export const googleBooksApi = createApi({
